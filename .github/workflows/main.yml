@@ -38,11 +38,11 @@ jobs:
       - name: Build Docker Image
         run: docker/build-push-action@v3
         with:
-        args:
-          context: . true
-          dockerfile: Dockerfile
-          push: false
-          "tags": ${{secrets.DOCKER_HUB_USERNAME}}/ci-cd:$(date-'%Y%m%d%H%M%S')
+          args:
+            context: . true
+            dockerfile: Dockerfile
+            push: false
+            tags: ${{secrets.DOCKER_HUB_USERNAME}}/ci-cd:$(date-'%Y%m%d%H%M%S')
 
 
       - name: Login to Docker Hub
