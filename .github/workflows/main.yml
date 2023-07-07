@@ -49,7 +49,7 @@ jobs:
       - name: Push  to Docker Hub
         uses: docker/build-push-action@v4
         with:
-          context: . true
+          context: .
           dockerfile: Dockerfile
           push: true
           tags: karthikn1118/ci-cd:latest
