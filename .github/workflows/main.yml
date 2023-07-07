@@ -38,6 +38,7 @@ jobs:
       - name: Build Docker Image
         run: docker/build-push-action@v3
         with:
+        args:
           context: . true
           dockerfile: Dockerfile
           push: false
