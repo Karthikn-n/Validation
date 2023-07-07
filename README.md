@@ -17,3 +17,5 @@
     - security,
     - binaries creation.
 - If we containerize the pipeline we also include **packaging the code** into a container image.
+
+### 🐾See My blog - [CI/CD](https://karthikn1.blogspot.com/2023/07/cicd-pipeline.html)
