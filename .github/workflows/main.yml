@@ -38,7 +38,7 @@ jobs:
           context: .
           dockerfile: Dockerfile
           push: false
-          tags: karthikn1118/ci-cd:latest
+          tags: karthikn1118/ci-cd:latest:v1
 #      Login into Docker hub
       - name: Login to Docker Hub
         uses: docker/login-action@v2
@@ -52,4 +52,4 @@ jobs:
           context: .
           dockerfile: Dockerfile
           push: true
-          tags: karthikn1118/ci-cd:latest
+          tags: karthikn1118/ci-cd:latestv1
