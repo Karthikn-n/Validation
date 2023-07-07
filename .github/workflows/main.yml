@@ -38,7 +38,7 @@ jobs:
       - name: Build Docker Image
         run: docker/build-push-action@v3
         with:
-          context: C:\Users\Karthikeyan\Desktop\Validate\Dockerfile
+          context: . true
           dockerfile: Dockerfile
           push: false
           "tags": ${{secrets.DOCKER_HUB_USERNAME}}/ci-cd:$(date-'%Y%m%d%H%M%S')
@@ -53,7 +53,7 @@ jobs:
       - name: Push  to Docker Hub
         run: docker/build-push-action@v3
         with:
-          context: C:\Users\Karthikeyan\Desktop\Validate\Dockerfile
+          context: . true
           dockerfile: Dockerfile
           push: true
           "tags": ${{secrets.DOCKER_HUB_USERNAME}}/ci-cd:$(date-'%Y%m%d%H%M%S')
